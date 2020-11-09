@@ -12,6 +12,7 @@
 
 # Eclipse
 .settings
+.settings/
 
 
 # Package Files #
