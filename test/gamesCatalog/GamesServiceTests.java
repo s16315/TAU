@@ -40,6 +40,20 @@ public class GamesServiceTests {
 	}	
 
 	@Test
+	public void testCreateCatchBadId() {
+		gamesService.create(game0);
+		
+		try {
+			gamesService.create(game0);
+			fail("No exception");
+		}
+		catch(IllegalArgumentException e) {
+			System.out.println("Catch bad id in game creating ok");	
+		}	
+		
+	}		
+	
+	@Test
 	public void testUpdate() {
 		gamesService.create(game0);
 		game1.setId(game0.getId());
@@ -60,4 +74,6 @@ public class GamesServiceTests {
 	}	
 	
 
+	
+	
 }
