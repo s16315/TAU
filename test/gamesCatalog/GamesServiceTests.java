@@ -38,6 +38,17 @@ public class GamesServiceTests {
 		assertSame(result.getPegi(), game0.getPegi());
 		System.out.println("Creating a game ok");
 	}	
+
+	@Test
+	public void testUpdate() {
+		gamesService.create(game0);
+		game1.setId(game0.getId());
+		gamesService.update(game1);
+		Game result = gamesService.readById(game0.getId());
+		assertSame(result.getName(), game1.getName());
+		assertSame(result.getPegi(), game1.getPegi());
+		System.out.println("Updating a game ok");
+	}		
 	
 	@Test
 	public void testDelete() {
