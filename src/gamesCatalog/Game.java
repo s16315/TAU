@@ -1,4 +1,4 @@
-package gameCatalog;
+package gamesCatalog;
 
 public class Game extends Entity{
     private String name;

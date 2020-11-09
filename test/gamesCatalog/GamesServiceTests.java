@@ -1,5 +1,6 @@
-package gameCatalogTests;
+package gamesCatalog;
 
 public class GamesServiceTests {
+	
 
 }

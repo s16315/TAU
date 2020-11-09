@@ -1,4 +1,4 @@
-package gameCatalog;
+package gamesCatalog;
 import java.util.ArrayList;
 
 @SuppressWarnings("hiding")

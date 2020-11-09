@@ -1,4 +1,4 @@
-package gameCatalog;
+package gamesCatalog;
 import java.util.ArrayList;
 
 public class GamesService implements IGamesService<Game>  {
