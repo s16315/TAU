@@ -45,8 +45,8 @@ public class GamesServiceTests {
 		game1.setId(game0.getId());
 		gamesService.update(game1);
 		Game result = gamesService.readById(game0.getId());
-		assertSame(result.getName(), game1.getName());
-		assertSame(result.getPegi(), game1.getPegi());
+		assertNotSame(result.getName(), game0.getName());
+		assertNotSame(result.getPegi(), game0.getPegi());		
 		System.out.println("Updating a game ok");
 	}		
 	
