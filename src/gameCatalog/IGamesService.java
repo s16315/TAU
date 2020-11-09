@@ -1,6 +1,7 @@
 package gameCatalog;
 import java.util.ArrayList;
 
+@SuppressWarnings("hiding")
 public interface IGamesService <Game>  {
     public long create(Game game);
     public ArrayList<Game> readAll();
