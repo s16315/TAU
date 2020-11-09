@@ -39,4 +39,13 @@ public class GamesServiceTests {
 		System.out.println("Creating a game ok");
 	}	
 	
+	@Test
+	public void testDelete() {
+		gamesService.create(game0);
+		gamesService.delete(game0);
+		ArrayList<Game> result = gamesService.readAll();
+		assertEquals(result.size(), 0);
+		System.out.println("Deleting a game ok");
+	}	
+	
 }
